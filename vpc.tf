@@ -4,7 +4,8 @@ data "aws_security_group" "default" {
 }
 
 module "vpc" {
-  source = "../../"
+  source  = "terraform-aws-modules/vpc/aws/examples/simple-vpc"
+  version = "2.21.0"
 
   name = "simple-example"
 
